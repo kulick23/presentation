@@ -1,0 +1,13 @@
+.EditableTextBlock{
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color:#fff;
+     position: absolute;
+     text-area{
+        width: 200px;
+        height: 100px;
+     }
+     .margin-top{
+        margin-top: 10px;
+     }
+}

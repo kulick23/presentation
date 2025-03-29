@@ -1,0 +1,29 @@
+.editor-toolbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  &__input {
+    margin-left: 4px;
+    border: none;
+    background: none;
+  }
+
+  &__input--small {
+    width: 60px;
+  }
+
+  &__select {
+    margin-left: 4px;
+  }
+}

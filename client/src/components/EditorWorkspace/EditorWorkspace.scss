@@ -1,0 +1,86 @@
+.editor-workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__pdf-message {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  &__delete-button {
+    padding: 6px 12px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  &__content {
+    display: flex;
+    flex: 1;
+  }
+  &__sidebar {
+    width: 250px;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  &__sidebar-item {
+    padding: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    &--active {
+      border: 2px solid #3498db;
+    }
+  }
+  &__sidebar-item-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  &__checkbox {
+    margin-right: 5px;
+  }
+  &__slide-number {
+    font-weight: bold;
+  }
+  &__sidebar-item-content {
+    font-size: 12px;
+    color: #666;
+  }
+  &__slide-title {
+    display: block;
+    margin-bottom: 4px;
+  }
+  &__slide-text {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__main {
+    flex: 1;
+    padding: 20px;
+   
+  }
+  &__slide {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    background-color: inherit; 
+    margin-bottom: 20px;
+  }
+  &__no-slide {
+    text-align: center;
+  }
+}

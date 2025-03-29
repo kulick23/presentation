@@ -1,0 +1,75 @@
+.users-panel {
+  border-left: 1px solid #ccc;
+  padding: 10px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__role {
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  &__role-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__role-btn {
+    padding: 2px 6px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-left: 5px;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+
+  &__role-btn--editor {
+    background-color: #f0ad4e;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+  &:hover {
+    background: #eea238;
+  }
+  }
+
+  &__role-btn--viewer {
+    background-color: #5bc0de;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+      background: #33b5dd;
+    }
+    
+  }
+}
